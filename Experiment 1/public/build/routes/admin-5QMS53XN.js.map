@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["browser-route-module:/media/zegveld/9EA0FA39A0FA180B1/PROJECT FULLSTACK/remix-js/blog-tutorial/app/routes/admin.tsx?browser", "../../../app/routes/admin.tsx"],
+  "sourcesContent": ["export { default, links } from \"/media/zegveld/9EA0FA39A0FA180B1/PROJECT FULLSTACK/remix-js/blog-tutorial/app/routes/admin.tsx\";", "import { Outlet, Link, useLoaderData } from \"remix\";\nimport { getPosts } from \"~/post\";\nimport type { Post } from \"~/post\";\nimport adminStyles from \"~/styles/admin.css\";\n\nexport let links = () => {\n  return [{ rel: \"stylesheet\", href: adminStyles }];\n};\n\nexport let loader = () => {\n  return getPosts();\n};\n\nexport default function Admin() {\n  let posts = useLoaderData<Post[]>();\n  return (\n    <div className=\"admin\">\n      <nav>\n        <h1>Admin</h1>\n        <ul>\n          {posts.map((post) => (\n            <li key={post.slug}>\n              <Link to={post.slug}>{post.title}</Link>\n            </li>\n          ))}\n        </ul>\n      </nav>\n      <main>\n        <Outlet />\n      </main>\n    </div>\n  );\n}\n"],
+  "mappings": ";;;;;;;;;;;AAAA;;;ACAA;;;;;;AAKO,IAAI,QAAQ,MAAM;AACvB,SAAO,CAAC,EAAE,KAAK,cAAc,MAAM;AAAA;AAOtB,iBAAiB;AAC9B,MAAI,QAAQ;AACZ,SACE,oCAAC,OAAD;AAAA,IAAK,WAAU;AAAA,KACb,oCAAC,OAAD,MACE,oCAAC,MAAD,MAAI,UACJ,oCAAC,MAAD,MACG,MAAM,IAAI,CAAC,SACV,oCAAC,MAAD;AAAA,IAAI,KAAK,KAAK;AAAA,KACZ,oCAAC,MAAD;AAAA,IAAM,IAAI,KAAK;AAAA,KAAO,KAAK,YAKnC,oCAAC,QAAD,MACE,oCAAC,gCAAD;AAAA;",
+  "names": []
+}

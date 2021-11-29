@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["browser-route-module:/media/zegveld/9EA0FA39A0FA180B/PROJECT FULLSTACK/remix-js/blog-tutorial/app/routes/admin/index.tsx?browser", "../../../../app/routes/admin/index.tsx"],
+  "sourcesContent": ["export { default } from \"/media/zegveld/9EA0FA39A0FA180B/PROJECT FULLSTACK/remix-js/blog-tutorial/app/routes/admin/index.tsx\";", "import { Link } from \"remix\";\n\nexport default function AdminIndex() {\n  return (\n    <p>\n      <Link to=\"new\">Create a New Post</Link>\n    </p>\n  );\n}\n"],
+  "mappings": ";;;;;;;;;AAAA;;;ACAA;AAEe,sBAAsB;AACnC,SACE,oCAAC,KAAD,MACE,oCAAC,MAAD;AAAA,IAAM,IAAG;AAAA,KAAM;AAAA;",
+  "names": []
+}

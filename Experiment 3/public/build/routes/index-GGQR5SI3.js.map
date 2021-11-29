@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["browser-route-module:/media/zegveld/9EA0FA39A0FA180B1/PROJECT FULLSTACK/remix-js/remix-crud-main/app/routes/index.tsx?browser", "../../../app/routes/index.tsx"],
+  "sourcesContent": ["export { default, meta } from \"/media/zegveld/9EA0FA39A0FA180B1/PROJECT FULLSTACK/remix-js/remix-crud-main/app/routes/index.tsx\";", "import type { MetaFunction, LoaderFunction } from \"remix\";\nimport { useLoaderData, json, Link } from \"remix\";\nimport { supabase } from \"../db\";\n\ntype IndexData = {\n  resources: Array<{ name: string; url: string }>;\n  demos: Array<{ name: string; to: string }>;\n};\n\n// https://remix.run/api/conventions#meta\nexport let meta: MetaFunction = () => {\n  return {\n    title: \"Remix Exploration\",\n    description: \"Going on Exploration\",\n  };\n};\n\n// https://remix.run/guides/routing#index-routes\nexport default function Index() {\n  let data = useLoaderData<IndexData>();\n\n  return (\n    <div>\n      <main>\n        <h2>On Going Remix Exploration</h2>\n        <p>This Remix run on Supabase Postgresql </p>\n        <p>\n          Feel free to take a look around .\n        </p>\n        <Link to=\"/feed\">Go To Feed Section</Link>\n      </main>\n    </div>\n  );\n}\n"],
+  "mappings": ";;;;;;;;;;AAAA;;;ACAA;AAUO,IAAI,OAAqB,MAAM;AACpC,SAAO;AAAA,IACL,OAAO;AAAA,IACP,aAAa;AAAA;AAAA;AAKF,iBAAiB;AAC9B,MAAI,OAAO;AAEX,SACE,oCAAC,OAAD,MACE,oCAAC,QAAD,MACE,oCAAC,MAAD,MAAI,+BACJ,oCAAC,KAAD,MAAG,2CACH,oCAAC,KAAD,MAAG,sCAGH,oCAAC,MAAD;AAAA,IAAM,IAAG;AAAA,KAAQ;AAAA;",
+  "names": []
+}

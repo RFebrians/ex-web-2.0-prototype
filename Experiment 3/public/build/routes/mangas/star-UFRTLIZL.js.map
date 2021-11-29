@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["browser-route-module:/media/zegveld/9EA0FA39A0FA180B1/PROJECT FULLSTACK/remix-js/remix-crud-main/app/routes/feed/star.tsx?browser", "../../../../app/routes/feed/star.tsx"],
+  "sourcesContent": ["export { default } from \"/media/zegveld/9EA0FA39A0FA180B1/PROJECT FULLSTACK/remix-js/remix-crud-main/app/routes/feed/star.tsx\";", "import { ActionFunction, redirect } from \"remix\";\n\nexport const action: ActionFunction = async ({ request }) => {\n  const formData = await request.formData();\n  console.log(\"star\", formData);\n  return redirect(\"/feed\");\n};\n\nexport default () => null;\n"],
+  "mappings": ";;;;;AAAA;;;ACAA;AAQA,IAAO,eAAQ,MAAM;",
+  "names": []
+}

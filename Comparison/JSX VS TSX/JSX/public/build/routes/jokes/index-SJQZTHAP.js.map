@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["browser-route-module:/media/zegveld/9EA0FA39A0FA180B1/PROJECT FULLSTACK/remix-js/remix-jokes-in-js-main/app/routes/jokes/index.jsx?browser", "../../../../app/routes/jokes/index.jsx"],
+  "sourcesContent": ["export { default } from \"/media/zegveld/9EA0FA39A0FA180B1/PROJECT FULLSTACK/remix-js/remix-jokes-in-js-main/app/routes/jokes/index.jsx\";", "//import type { LoaderFunction } from \"remix\";\nimport { useLoaderData, Link } from \"remix\";\nimport { Joke } from \"@prisma/client\";\nimport { db } from \"~/utils/db.server\";\n\n//type LoaderData = { randomJoke: Joke };\n\nexport let loader = async () => {\n  let count = await db.joke.count();\n  let randomRowNumber = Math.floor(Math.random() * count);\n  let [randomJoke] = await db.joke.findMany({\n    take: 1,\n    skip: randomRowNumber\n  });\n  let data = { randomJoke };\n  return data;\n};\n\nexport default function JokesIndexRoute() {\n  let data = useLoaderData();\n\n  return (\n    <div>\n      <p>Here's a random joke:</p>\n      <p>{data.randomJoke.content}</p>\n      <Link to={data.randomJoke.id}>\n        \"{data.randomJoke.name}\" Permalink\n      </Link>\n    </div>\n  );\n}\n"],
+  "mappings": ";;;;;;;;;;;;AAAA;;;ACAA;AAGA,gBAAmB;AAeJ,2BAA2B;AACxC,MAAI,OAAO;AAEX,SACE,oCAAC,OAAD,MACE,oCAAC,KAAD,MAAG,0BACH,oCAAC,KAAD,MAAI,KAAK,WAAW,UACpB,oCAAC,MAAD;AAAA,IAAM,IAAI,KAAK,WAAW;AAAA,KAAI,KAC1B,KAAK,WAAW,MAAK;AAAA;",
+  "names": []
+}

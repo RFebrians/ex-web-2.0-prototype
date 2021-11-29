@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["browser-route-module:/media/zegveld/9EA0FA39A0FA180B1/PROJECT FULLSTACK/remix-js/remix-jokes-in-js-main/app/routes/jokes/$jokeId.jsx?browser", "../../../../app/routes/jokes/$jokeId.jsx"],
+  "sourcesContent": ["export { default } from \"/media/zegveld/9EA0FA39A0FA180B1/PROJECT FULLSTACK/remix-js/remix-jokes-in-js-main/app/routes/jokes/$jokeId.jsx\";", "//mport type { LoaderFunction } from \"remix\";\nimport { Link, useLoaderData } from \"remix\";\n//import { Joke } from \"@prisma/client\";\nimport { db } from \"~/utils/db.server\";\n\n//type LoaderData = { joke: Joke };\n\nexport let loader = async ({ params }) => {\n  let joke = await db.joke.findUnique({\n    where: { id: params.jokeId }\n  });\n  if (!joke) throw new Error(\"Joke not found\");\n  let data = { joke };\n  return data;\n};\n\nexport default function JokeRoute() {\n  let data = useLoaderData();\n\n  return (\n    <div>\n      <p>Here's your hilarious joke:</p>\n      <p>{data.joke.content}</p>\n      <Link to=\".\">{data.joke.name} Permalink</Link>\n    </div>\n  );\n}\n"],
+  "mappings": ";;;;;;;;;;;;AAAA;;;ACAA;AAGA,gBAAmB;AAaJ,qBAAqB;AAClC,MAAI,OAAO;AAEX,SACE,oCAAC,OAAD,MACE,oCAAC,KAAD,MAAG,gCACH,oCAAC,KAAD,MAAI,KAAK,KAAK,UACd,oCAAC,MAAD;AAAA,IAAM,IAAG;AAAA,KAAK,KAAK,KAAK,MAAK;AAAA;",
+  "names": []
+}

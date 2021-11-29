@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["browser-route-module:/media/zegveld/9EA0FA39A0FA180B1/PROJECT FULLSTACK/remix-js/remix-jokes-in-js-main/app/routes/index.jsx?browser", "../../../app/routes/index.jsx"],
+  "sourcesContent": ["export { default, links } from \"/media/zegveld/9EA0FA39A0FA180B1/PROJECT FULLSTACK/remix-js/remix-jokes-in-js-main/app/routes/index.jsx\";", "//import type { LinksFunction } from \"remix\";\nimport { Link } from \"remix\";\nimport stylesUrl from \"../styles/index.css\";\n\nexport let links = () => {\n  return [\n    {\n      rel: \"stylesheet\",\n      href: stylesUrl\n    }\n  ];\n};\n\nexport default function Index() {\n  return (\n    <div className=\"container\">\n      <div className=\"content\">\n        <h1>\n          Remix <span>Jokes!</span>\n        </h1>\n        <nav>\n          <ul>\n            <li>\n              <Link to=\"jokes\">Read Jokes</Link>\n            </li>\n          </ul>\n        </nav>\n      </div>\n    </div>\n  );\n}\n"],
+  "mappings": ";;;;;;;AAAA;;;ACAA;;;;;;AAIO,IAAI,QAAQ,MAAM;AACvB,SAAO;AAAA,IACL;AAAA,MACE,KAAK;AAAA,MACL,MAAM;AAAA;AAAA;AAAA;AAKG,iBAAiB;AAC9B,SACE,oCAAC,OAAD;AAAA,IAAK,WAAU;AAAA,KACb,oCAAC,OAAD;AAAA,IAAK,WAAU;AAAA,KACb,oCAAC,MAAD,MAAI,UACI,oCAAC,QAAD,MAAM,YAEd,oCAAC,OAAD,MACE,oCAAC,MAAD,MACE,oCAAC,MAAD,MACE,oCAAC,MAAD;AAAA,IAAM,IAAG;AAAA,KAAQ;AAAA;",
+  "names": []
+}
