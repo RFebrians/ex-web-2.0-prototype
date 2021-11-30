@@ -1,6 +1,6 @@
-# ex-web-2.-prototype
+# Exploration of Code Web 2.0 - Prototype
 
-Built a modern site more optimized and enchanced unit with Remix JS
+Built a modern site more optimized and enchanced unit with Remix framework
 
 # Experiment 1
 
@@ -11,8 +11,7 @@ Goals : Create Post , Route and Generate Params
 Tipe : Tutorial
 
 Libraries :
-- React JS
-- Remix JS
+- Remix
 - RyanflorenceMD (markdown post)
 
 
@@ -25,7 +24,6 @@ Goals : Fullstack Application with Serverside Rendering , Focused on optimized R
 Tipe : Tutorial
 
 Libraries :
-- React JS
 - Remix
 - Prisma
 - SQLite
@@ -41,13 +39,21 @@ Goals : Route Handling , Error Boundaries & GET API dengan Supabase
 Tipe : Experiment
 
 Libraries : 
+- Remix
 - React JS
-- Remix JS
-- Supabase Client
+- Supabase JS
 
 # Experiment 4
 
 Title : Remix Forum Stack
 
-
 Goals : Deliver A Complete Forum Application with Database and Auth for User
+
+Tipe : Experiment
+
+Libraries :
+- Remix
+- React JS
+- Prisma
+- SQLIte
+- Bcrypt
