@@ -2,7 +2,7 @@
 
 Built a modern site more optimized and enchanced unit with Remix framework
 
-# Experiment 1
+# Experiment 1 Demo
 
 Title : Remix Blog
 
@@ -15,7 +15,7 @@ Libraries :
 - RyanflorenceMD (markdown post)
 
 
-# Experiment 2
+# Experiment 2 Demo
 
 Title : Remix Fullstack Application
 
@@ -57,3 +57,7 @@ Libraries :
 - Prisma
 - SQLIte
 - Bcrypt
+
+# Comparison 
+
+Goals : Learn JSX and TSX by Comparing Both
