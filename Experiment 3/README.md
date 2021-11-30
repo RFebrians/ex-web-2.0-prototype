@@ -1,6 +1,13 @@
 # Remix - Supabase
 
-An Experimental CRUD
+[Preview](https://codesandbox.io/s/clever-bash-mmknw?file=/README.md)
+
+An Experimental CRUD that connected to Remote DB
+
+Libraries : 
+
+- Remix
+- Supabase
 
 More info visit
 
