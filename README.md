@@ -60,4 +60,4 @@ Libraries :
 
 # Comparison 
 
-Goals : Learn JSX and TSX by Comparing Both
+Goals : Learn JSX and TSX by Comparing Both with the same Application 
