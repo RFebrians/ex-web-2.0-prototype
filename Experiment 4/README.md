@@ -1,9 +1,11 @@
 # Experiment 4
 
+## Remix Forum
+
 Bootstraped by Remix Jokes Template with some another function
 
 
-## Development
+## Local Development
 
 From your terminal:
 
@@ -28,6 +30,6 @@ Then run the app in production mode:
 npm start
 ```
 
-## To Do 
+## Next To Do 
 
 - Deployment to Vercel
