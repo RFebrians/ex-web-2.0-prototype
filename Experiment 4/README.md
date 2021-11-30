@@ -1,24 +1,7 @@
-# Welcome to Remix!
+# Experiment 4
 
-This example demonstrates some of the basic features of Remix, including:
+Bootstraped by Remix Jokes Template with some another function
 
-- Generating a new Remix project
-- Conventional files
-- Routes (including the nested variety ✨)
-- Styling
-- Database interactions (via `sqlite` and `prisma`)
-- Mutations
-- Validation
-- Authentication
-- Error handling: Both unexpected (the dev made a whoopsies) and expected (the end-user made a whoopsies) errors
-- SEO with Meta Tags
-- JavaScript...
-- Resource Routes
-- Deployment
-
-This is the finished version of [the tutorial](https://remix.run/docs/tutorials/jokes)
-
-- [Remix Docs](https://remix.run/docs)
 
 ## Development
 
@@ -44,9 +27,3 @@ Then run the app in production mode:
 ```sh
 npm start
 ```
-
-## Preview
-
-Open this example on [CodeSandbox](https://codesandbox.com):
-
-[![Open in codesandbox](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/github/remix-run/remix/tree/main/examples/jokes)
