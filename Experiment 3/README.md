@@ -1,13 +1,15 @@
 # Remix - Supabase
 
-[Preview](https://codesandbox.io/s/clever-bash-mmknw?file=/README.md)
-
 An Experimental CRUD that connected to Remote DB
 
 Libraries : 
 
 - Remix
 - Supabase
+
+Preview :
+
+[![Open in codesandbox](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/clever-bash-mmknw?file=/README.md)
 
 More info visit
 
