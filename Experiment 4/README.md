@@ -5,6 +5,27 @@
 Bootstraped by Remix Jokes Template with some another function
 
 
+
+### Title : Remix Forum Stack
+
+### Tipe : Experiment (from template Remix Jokes)
+
+### Goals : Deliver A Complete Forum Application with Database and Auth for User
+
+### Libraries used:
+- Remix
+- React JS
+- Prisma
+- SQLite
+- Bcrypt
+
+
+
+## Flowchart
+
+![alt text](flow-1.png "flowchart")
+
+
 ## Local Development
 
 From your terminal:
