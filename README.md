@@ -1,4 +1,4 @@
-# Exploration of Code Web 2.0 - Prototype
+# Exploration Code With Remix 
 
 Built a modern site more optimized and enchanced unit with Remix framework
 
