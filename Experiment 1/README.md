@@ -1,9 +1,29 @@
-# Welcome to Remix!
+# Experiment 1
+
+- Tipe : Tutorial
+- Goals : Initialize , Create Post , Route and Generate Params
+
+## Initialize
+
+```sh
+npx create-remix@latest
+
+   choose Remix App Server (sample)
+
+cd (directory)
+
+npm run dev
+```
+![alt text](universal1.png "flowchart")
+
+Visit more
 
 - [Remix Docs](https://docs.remix.run)
 - [Customer Dashboard](https://remix.run/dashboard)
 
-## Development
+
+
+## Development from Git
 
 From your terminal:
 
